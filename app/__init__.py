@@ -7,8 +7,6 @@ from flask_uploads import UploadSet,configure_uploads,IMAGES
 from flask_mail import Mail
 from flask_simplemde import SimpleMDE
 
-
-
 bootstrap = Bootstrap()
 db = SQLAlchemy()
 login_manager = LoginManager()
@@ -39,13 +37,7 @@ def create_app(config_name):
     from .auth import auth as auth_blueprint
     app.register_blueprint(auth_blueprint,url_prefix = '/authenticate')
 
-    #Setting config
-
-    
-
     #configure UploadSet
     configure_uploads(app,photos)
-
-    #Will add the views and forms
 
     return app
