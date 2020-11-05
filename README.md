@@ -40,7 +40,7 @@ A writer can:
 
 1. Clone or download and unzip the repository from github https://github.com/Susan-Kathoni/BetterBlogs.git
 
-2. You can use this command (git clone hhttps://github.com/Susan-Kathoni/Profile-pitching.git to clone the project to your machine if you have git .
+2. You can use this command (git clone https://github.com/Susan-Kathoni/BetterBlogs.git to clone the project to your machine if you have git .
 
 3. Copy the directory into the project folder and open it in your text editor either e.g atom.
 
