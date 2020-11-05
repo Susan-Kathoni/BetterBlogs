@@ -1,7 +1,7 @@
 {% macro displayBlogs(blogs_list) %}
 
     {% for blog in blogs_list[::-1] %}
-      <div class="panel style="style="box-shadow: 5px 5px 5px 5px #f2f2f2; padding:10px; text-align:center;">
+      <div class="panel style=" style="box-shadow: 5px 5px 5px 5px #f2f2f2; padding:10px; text-align:center; background:lightgrey">
           <h3>{{blog.blog}}</h3>
           <p> Posted on:{{blog.date}}</p>
           <br>
@@ -39,7 +39,6 @@
 
 {% endmacro %}
 
-<!-- Displaying quotes -->
 {% macro displayQuoteList(quote_list) %}
 
 
