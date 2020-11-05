@@ -1,4 +1,4 @@
-# PITCHING
+# BetterBlogs
 
 ## Author
 
