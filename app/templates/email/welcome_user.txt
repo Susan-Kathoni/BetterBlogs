@@ -1,0 +1,3 @@
+Hello {{user.username}}
+Welcome to BetterBlogs
+Thank you for signing up. Please enjoy random quotes and blog posts on my site, view and comment on posts by other users and create your own posts if you like.
