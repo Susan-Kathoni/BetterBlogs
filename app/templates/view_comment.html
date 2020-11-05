@@ -1,0 +1,29 @@
+{% extends 'base.html'%}
+
+{% block styles%}
+{{ super() }}
+<link href="https://fonts.googleapis.com/css2?family=Nova+Script&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+{% block content %}
+    <div class="container view-comment" style="background-color: lightgrey;">
+        <a href="{{url_for('main.index')}}">
+            <button type="button" class="btn btn-primary btn-sm">
+                    <span class="glyphicon glyphicon-chevron-left" ></span> Back
+                </button>
+                <h3 style="color:white;">Comments:</h3>
+        </a>
+        
+        <h6> &nbsp; &nbsp; <span style="font-weight:bolder">Found :</span>  &nbsp; <span style="font-family: 'Nova Script', cursive; font-size:20px;">{{ comments | count }} Comments</span></h6>
+        <hr>
+        {% for item in comments[::-1] %}
+            <div class="panel">
+                <p style="font-family:Bellefair; font-size:20px; padding:10px; text-align:center;">{{item.comment}}</p>  
+                <h5>&nbsp;&nbsp;Comment by: &nbsp;<span style="color:black;font-family: 'Nova Script', cursive; font-size:25px;">{{item.username}}</span></h5>
+            </div>
+            {%endfor%}
+
+    </div>
+   
+{% endblock %}
