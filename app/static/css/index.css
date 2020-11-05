@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Carter+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Merienda+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Courgette&display=swap');
+
+body{
+    background:linear-gradient(to top, #5da27b 0%, #dc5038 97%);
+}
+
+.button:hover {background-color:white}
+
+.button:active {
+  background-color: black;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+h3{
+     text-align: center;
+     font-family: 'Merienda One', cursive;
+     color:black;
+ }
+
+ p{
+     font-size:20px;
+     font-family: 'Niconne', cursive;
+ }
+
+ .page-heading{
+     text-align: center;
+ }
+
+ .all{
+    background-color: linear-gradient(to top, #5da27b 0%, #dc5038 97%);
+    min-height: 80vh;
+    margin:80px;
+    border-radius: 28px;
+    background-repeat: no-repeat;
+ }
+
+ .abt{
+    min-height: 30vh;
+    min-width: 30vh;
+    border-radius: 28px;
+ }
+
+ .contact{
+    background-color: lightgray;
+    min-height: 80vh;
+    margin:80px;
+    border-radius: 28px;
+ }
+
+ .login{
+    background-color: lightgray;
+    min-height: 80vh;
+    margin:80px;
+    border-radius: 28px;
+    font-family: 'Courgette', cursive;
+ }
+ .register{
+    background-color: lightgray;
+    min-height: 80vh;
+    margin:80px;
+    border-radius: 28px;
+    font-family: 'Niconne', cursive;
+ }
+
+ .new-blog{
+    background-color: linear-gradient(to top, #5da27b 0%, #dc5038 97%);
+    min-height: 60vh;
+    margin:80px;
+    border-radius: 28px;
+    font-family: 'Niconne', cursive; 
+ }
+ .new{
+    font-family: 'Niconne', cursive;
+    color:black;
+    font-size:25px;
+    margin:40px;
+    text-align: center;
+    box-shadow: black 1px 1px;
+ }
+ .row{
+     margin:40px;
+ }
+
+ .navbar-brand{
+     text-align: center;
+     color: whitesmoke;
+ }
+
+ .navbar{
+     background-color: darkslategrey;
+     padding:20px;
+     margin-top:5px;
+ }
+
+ h2{
+     text-align: center;
+     margin-bottom:40px;
+     margin-top:150px;
+     font-family: 'Carter One', cursive;
+     font-size:30px;
+     color:black
+ }
+ .text-light{
+     padding:20px;
+     font-size: 20px;
+ }
+
+ .sign{
+     margin-top:6px;
+ }
+
+ 
+ .log{
+     margin-top: 5px;
+ }
+
+ 
+
+ .comment{
+    min-height: 100vh;
+    background-color:#5D737E;
+    font-family: 'Niconne', cursive;
+    font-size:20px;
+ }
+
+ .view-comment{
+    min-height: 100vh;
+    background-color:#5D737E;
+    font-family: 'Niconne', cursive;
+    font-size:20px;
+ }
+
+ .col-md-6{
+     justify-content: right;
+ }
