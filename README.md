@@ -38,7 +38,7 @@ A writer can:
 
 ## Setup Installation
 
-1. Clone or download and unzip the repository from github https://github.com/Susan-Kathoni/Profile-pitching.git
+1. Clone or download and unzip the repository from github https://github.com/Susan-Kathoni/BetterBlogs.git
 
 2. You can use this command (git clone hhttps://github.com/Susan-Kathoni/Profile-pitching.git to clone the project to your machine if you have git .
 
