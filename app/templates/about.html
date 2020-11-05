@@ -7,32 +7,40 @@
 {% block styles%}
    {{super()}}
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css2?family=Nova+Script&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
 {% endblock %}
 <!-- Content block -->
 
 <section id="index">
-       
-    {% block content %}
+    
+  {% block content %}
 
-    <div class="container-fluid about-me-section">
-        <h1 class="text-center"><strong>ABOUT ME:</strong></h1>
-        <li><b>Contact information</b></li>
-        Contact me:
-        <a>kathonisusan@gmail.com</a> 
-        <li><b>Professional Experience</b></li>
-        <p>I am a high school teacher by profession.</p>
-        <p> I have also been self-employed at a food kiosk for around three months.</p>
-        <li><b>Why I decided to study Software development.</b></li>
+    <div class="container about-me-section" style="background: lightgrey;">
+        <h1 class="text-center" style="font-family: 'Nova Script', cursive; color:rgb(255, 57, 90)"><strong>ABOUT ME:</strong></h1>
+        <hr>
+        <li style="font-size: 20px;"><b>Professional Experience</b></li>
+        <br>
+        <p>I am a high school teacher by profession.
+        I have also been self-employed at a food kiosk for around three months.</p>
+        <br>
+        <li style="font-size: 20px;"><b>Why I decided to study Software development.</b></li>
+        <br>
         <p>After completion of my secondary school education, I wanted to pursue Information Technology
           but I was discouraged against it. Covid 19 pandemic however made me loose my job but luckily for me Moringa School gave me 
           another chance in life and also rekindled what I had always wanted to pursue. </p>
-        <li><b>Interests</b></li>
+        <br>
+        <li style="font-size: 20px;"><b>Interests</b></li>
+        <br>
         <p>Currently I am interested at learning Software development and building a successful career
           out of it.</p>
-        <li><b>Hobbies</b></li>
+        <br>
+        <li style="font-size: 20px;"><b>Hobbies</b></li>
+        <br>
         <p>They include: watching movies, cycling, doing nature walks etc.</p>
-        <li><b>Skills</b></li>
+        <br>
+        <li style="font-size: 20px;"><b>Skills</b></li>
+        <br>
         <p>They include: interpersonal skills, being flexible, basic computer skills etc.</p>
       </div>
     
