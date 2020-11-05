@@ -1,24 +1,26 @@
 {% extends 'base.html'%}
 {% block styles%}
 {{ super() }}
-<link href="https://fonts.googleapis.com/css2?family=Nova+Script&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Charm:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Courgette&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="{{url_for('static',filename='css/profile.css')}}">
 {% endblock %}
 
 
 {% block content %}
 
-  <div class="container prof" style="background: lightgrey;">
+  <div class="container" style="background: lightgrey;">
     <div class="card">
        <div class="card-header">
-              <h1 class="text-center" style="font-family: 'Nova Script', cursive; color:rgb(255, 57, 90)">USER PROFILE</h1>    
-            <h1>  Hi; {{user.username| capitalize}} </h1>
+              <h1 class="text-center" style="font-family: 'Charm', cursive; color:rgb(255, 57, 90)">USER PROFILE</h1>    
+            <h1 style="font-family: 'Charm', cursive; font-size:30px; color:blue">  Hello {{user.username| capitalize}} </h1>
           </div>
           <div class="card-title">
             {% if user.profile_pic_path %}
             <img src="{{url_for('static',filename=user.profile_pic_path)}}"c class="rounded-circle card-image-top img-fluid" alt="" class="img-thumbnail">
             {%else%}
-            <p>Please upload your profile picture for display.</p>
+            <p style="font-family: 'Courgette', cursive; font-size:20px">Please upload your profile picture for display.</p>
             {% endif %}
 
             {% if user == current_user %}
@@ -26,6 +28,8 @@
             <form action="{{url_for('main.update_pic',uname=user.username)}}" method="post"
               enctype="multipart/form-data">
               <input type="file" name="photo" class="form-control sub" required>
+              <br>
+              
               <button type="submit">Submit</button>
             </form>
             {% endif %}
@@ -35,13 +39,17 @@
             {% if user.bio %}
             <p> {{user.bio}}</p>
             {%else%}
-            <p> {{user.username| capitalize}} has no bio. </p>
+            <br>
+            <br>
+            <p style="font-family: 'Courgette', cursive; font-size:20px"> {{user.username| capitalize}} has no bio. </p>
             {% endif %}
-            
+            <br>
+           
             {% if user == current_user %}
-            <button><a class="bio" href="{{url_for('main.update_profile',uname=user.username)}}">Edit profile</a></button>
+            <button><a class="bio" href="{{url_for('main.update_profile',uname=user.username)}}" style="font-family: 'Courgette', cursive; font-size:20px">Edit profile</a></button>
             {% endif %}
-
+            <br>
+            <br>
           </div>
           
     </div>
